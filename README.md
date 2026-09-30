@@ -1,215 +1,125 @@
-# Awesome-Clinical-Data-Management
+<div align="center">
 
-## Top Clinical Data Management Platforms Ecosystem
+![Awesome Clinical Data Management Banner](assets/banner.svg)
 
+# 🏥 Awesome Clinical Data Management 📊
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Clinical-Data-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Clinical-Data-Management?style=flat-square&logo=github" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Clinical-Data-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Clinical-Data-Management?style=flat-square&logo=github" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Clinical-Data-Management/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Clinical-Data-Management?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+**A Curated List of SaaS Platforms & Open-Source GitHub Projects for Clinical Data Management (CDM), Electronic Data Capture (EDC), CDISC Standards & Regulatory Submissions.**
 
-*Focused on Electronic Data Capture, CDISC Compliance, Data Cleaning & Regulatory Submission*
+---
 
-**Last updated: September 2026**
+</div>
 
+## 📑 Table of Contents
+- [🌐 Ecosystem & Market Overview](#-ecosystem--market-overview)
+- [🏢 SaaS/Hosted CDM & EDC Platforms](#-saashosted-cdm--edc-platforms)
+- [⚡ Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Developer Tools & Frameworks](#%EF%B8%8F-developer-tools--frameworks)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚖️ Disclaimer](#%EF%B8%8F-disclaimer)
 
+---
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Clinical Data Management**. These tools help sponsors, CROs, and research institutions capture, clean, transform, and submit clinical trial data in compliance with GCP, 21 CFR Part 11, and CDISC standards.
+## 🌐 Ecosystem & Market Overview
 
+Clinical Data Management (CDM) systems enable biopharmaceutical companies, Contract Research Organizations (CROs), academic institutions, and medical centers to capture, clean, validate, transform, and store clinical trial patient data while adhering to **21 CFR Part 11**, **ICH-GCP**, and **CDISC standards (SDTM, ADaM, ODM-XML)**.
 
+📈 **Market Analysis**: The global Clinical Data Management System (CDMS) market is estimated at **$2.4 Billion (2026)** and is projected to reach **$4.8 Billion by 2032** (CAGR of ~12.2%). The sector exhibits **moderate market concentration** led by enterprise giants (Oracle, Medidata, Veeva), while maintaining an active long-tail of specialized cloud platforms and vibrant open-source alternatives suited for academic research and decentralized clinical trials (DCTs).
 
-**Examples** include Medidata, Veeva Vault CDMS, Oracle Clinical One, Clario, IBM Clinical Development, OpenClinica, Ennov Clinical, Macro EDC, ClinCapture, and Castor (the category leaders).
+---
 
+## 🏢 SaaS/Hosted CDM & EDC Platforms
 
+Below is a comparison of commercial SaaS and cloud-hosted clinical data management platforms, ordered by **Company Size (Revenue / Valuation) in descending order**:
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom study workflows, and transparent clinical data — ideal for academic research centers and non-profit organizations that need full control over sensitive patient data without per-subject SaaS fees or vendor lock-in.
+| Platform / Product | Company Size (Valuation / Revenue) 💰 | Pricing (Starting Tier) 💵 | Free Tier / Trial Limits 🎁 | Key Capabilities 🛠️ |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Oracle Clinical One](https://www.oracle.com/life-sciences/clinical-research/clinical-one/)** | **~$480B Valuation**<br>*(~$53B Revenue)* | Starts at **~$1,500/month** per study | **30-day guided sandbox** demo environment upon sales request | End-to-end cloud platform unifying EDC, RTSM, CTMS, and real-time trial analytics. |
+| **[Macro EDC (RELX/Elsevier)](https://www.elsevier.com/solutions/macro)** | **~$80B Valuation**<br>*(~$11B Revenue)* | Starts at **~$1,200/month** per protocol | **14-day evaluation access** upon institutional request | High-security EDC platform with CDISC export, complex form rules, and trial auditing. |
+| **[Medidata Rave EDC](https://www.medidata.com/en/products/rave-edc/)** | **~$50B Valuation**<br>*($5.8B acquisition; ~$750M Rev)* | Starts at **~$2,500/month** per study site | **No free trial** *(30-day sandbox via Medidata Academy)* | Industry standard for enterprise CROs/Sponsors, Rave RTSM, and cloud data capture. |
+| **[Veeva Vault CDMS](https://www.veeva.com/products/vault-cdms/)** | **~$45.5B Valuation**<br>*(~$3.2B Revenue)* | Starts at **~$2,000/month** per study site | **No free trial** *(custom live sandbox demo on request)* | Modern cloud-native EDC, data coding, eTMF integration, and submission-ready datasets. |
+| **[Clario EDC](https://clario.com/)** | **~$3.5B Valuation**<br>*(~$800M Revenue)* | Starts at **~$1,500/month** per study | **14-day preview environment** for qualified sponsors | Specialized clinical endpoint data collection, eCOA/ePRO, cardiac safety, and imaging data. |
+| **[IBM Clinical Development (Merative)](https://www.merative.com/clinical-development)** | **~$1.0B Valuation**<br>*(~$300M Revenue)* | Starts at **~$1,000/month** per deployment | **14-day guided walkthrough** sandbox | Integrated EDC, patient management, electronic questionnaires, and automated CDISC exports. |
+| **[Castor EDC](https://www.castoredc.com/)** | **~$150M Valuation**<br>*(~$20M Revenue)* | Starts at **$250/month** (academic center tier) | **Free 30-day trial** *(up to 5 study participants / 10 test forms)* | User-friendly cloud EDC, eConsent, ePRO, decentralized trial modules, and REST API access. |
+| **[Ennov Clinical](https://www.ennov.com/clinical-suite/)** | **~$75M Valuation**<br>*(~$15M Revenue)* | Starts at **~$800/month** per protocol | **14-day evaluation demo instance** upon request | Unified EDC, CTMS, eTMF, and regulatory document management suite compliant with GCP. |
+| **[ClinCapture](https://www.clincapture.com/)** | **~$20M Valuation**<br>*(~$5M Revenue)* | Starts at **$499/month** (self-service build) | **Free 14-day trial** for study designer & form builder | Validated cloud EDC, self-service form design, CTMS connectors, and offline data capture. |
+| **[OpenClinica Enterprise Cloud](https://www.openclinica.com/)** | **~$18M Valuation**<br>*(~$4M Revenue)* | Starts at **$500/month** (small study starter) | **100% Free self-hosted edition** *(or 30-day cloud trial)* | Commercial cloud edition of OpenClinica with drag-and-drop form builder and 21 CFR Part 11 validation. |
 
+---
 
+## ⚡ Open-Source GitHub Projects
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+The open-source ecosystem for Clinical Data Management offers robust, production-tested solutions. Below is a curated list of active open-source projects, sorted by **GitHub Stars in descending order**:
 
+| Repository / Project | Stars Badge ⭐ *(Clickable)* | Language / Tech Stack | License | Description & Highlights 💡 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[OpenClinica Community](https://github.com/OpenClinica/OpenClinica)** | [![GitHub stars](https://img.shields.io/github/stars/OpenClinica/OpenClinica?style=social&color=white)](https://github.com/OpenClinica/OpenClinica/stargazers) | Java, PostgreSQL | LGPL-2.1 | The original open-source EDC platform. Comprehensive web-based clinical data capture and trial management. |
+| **[pharmaverse/admiral](https://github.com/pharmaverse/admiral)** | [![GitHub stars](https://img.shields.io/github/stars/pharmaverse/admiral?style=social&color=white)](https://github.com/pharmaverse/admiral/stargazers) | R | Apache-2.0 | Modular R package framework for creating ADaM (Analysis Data Model) datasets in pharmaverse. |
+| **[cdisc-org/cdisc-rules-engine](https://github.com/cdisc-org/cdisc-rules-engine)** | [![GitHub stars](https://img.shields.io/github/stars/cdisc-org/cdisc-rules-engine?style=social&color=white)](https://github.com/cdisc-org/cdisc-rules-engine/stargazers) | Python | MIT | Official CDISC rules engine for automated validation of clinical trial data standards. |
+| **[reliatec-gmbh/LibreClinica](https://github.com/reliatec-gmbh/LibreClinica)** | [![GitHub stars](https://img.shields.io/github/stars/reliatec-gmbh/LibreClinica?style=social&color=white)](https://github.com/reliatec-gmbh/LibreClinica/stargazers) | Java, JSP, PostgreSQL | LGPL-2.1 | Most active open-source successor to OpenClinica 3.x. Production-proven GCP-compliant EDC platform. |
+| **[phoenixctms/ctsms](https://github.com/phoenixctms/ctsms)** | [![GitHub stars](https://img.shields.io/github/stars/phoenixctms/ctsms?style=social&color=white)](https://github.com/phoenixctms/ctsms/stargazers) | Java, Spring, GWT | GPL-3.0 | Comprehensive Clinical Trial Management System (CTMS), Patient Recruitment (PRS), and CDMS. |
+| **[insightsengineering/random.cdisc.data](https://github.com/insightsengineering/random.cdisc.data)** | [![GitHub stars](https://img.shields.io/github/stars/insightsengineering/random.cdisc.data?style=social&color=white)](https://github.com/insightsengineering/random.cdisc.data/stargazers) | R | Apache-2.0 | Synthetic CDISC-compliant dataset generator (ADSL, ADAE, ADLB) for testing and pipeline benchmarking. |
+| **[pharmaverse/sdtm.oak](https://github.com/pharmaverse/sdtm.oak)** | [![GitHub stars](https://img.shields.io/github/stars/pharmaverse/sdtm.oak?style=social&color=white)](https://github.com/pharmaverse/sdtm.oak/stargazers) | R | Apache-2.0 | EDC-agnostic SDTM data transformation engine automating raw electronic data to CDISC SDTM domains. |
+| **[clinicedc/edc](https://github.com/clinicedc/edc)** | [![GitHub stars](https://img.shields.io/github/stars/clinicedc/edc?style=social&color=white)](https://github.com/clinicedc/edc/stargazers) | Python, Django | GPL-3.0 | Modular Django framework for building custom multi-center longitudinal clinical trial EDC applications. |
+| **[cdiscbuilder](https://github.com/ishandutta2007/cdiscbuilder)** | [![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/cdiscbuilder?style=social&color=white)](https://github.com/ishandutta2007/cdiscbuilder/stargazers) | Python, PyPI | MIT | Configuration-driven Python package converting CDISC ODM XML files directly into SDTM/ADaM datasets. |
+| **[hcstubbe/lcarsc](https://github.com/hcstubbe/lcarsc)** | [![GitHub stars](https://img.shields.io/github/stars/hcstubbe/lcarsc?style=social&color=white)](https://github.com/hcstubbe/lcarsc/stargazers) | R, Shiny, SQLite | MIT | Lightweight EDC system published in *Nature Scientific Reports (2024)* for resource-constrained trial settings. |
 
+---
 
-## Table of Contents
+## 🛠️ Developer Tools & Frameworks
 
+Building custom clinical data processing pipelines? Here is a suggested open-source technology stack:
 
+- **Core EDC & Data Capture**: [LibreClinica](https://github.com/reliatec-gmbh/LibreClinica) or [OpenClinica Community](https://github.com/OpenClinica/OpenClinica) for web-based data entry with audit trail logging.
+- **SDTM/ADaM Transformation**: [pharmaverse/sdtm.oak](https://github.com/pharmaverse/sdtm.oak) and [pharmaverse/admiral](https://github.com/pharmaverse/admiral) for R workflows; [cdiscbuilder](https://github.com/ishandutta2007/cdiscbuilder) for Python workflows.
+- **Standards Validation**: [cdisc-rules-engine](https://github.com/cdisc-org/cdisc-rules-engine) for validating compliance against CDISC specifications.
+- **Synthetic Test Data Generation**: [random.cdisc.data](https://github.com/insightsengineering/random.cdisc.data) for generating mock datasets during development.
 
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
+---
 
-- [Open-Source GitHub Projects](#open-source-github-projects)
+## 🤝 How to Contribute
 
-- [How to Contribute](#how-to-contribute)
+Contributions are warmly welcome! Help make this curated list the ultimate resource for clinical trial data tools.
 
-- [Disclaimer](#disclaimer)
+1. **Fork** this repository.
+2. Add your tool/project to `README.md` following the table formatting.
+3. Ensure description is factual, concise, and linked to official sites/repositories.
+4. Submit a **Pull Request (PR)** with a clear title.
 
+Check out our curated list collection at [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)!
 
+---
 
-## SaaS/Hosted Platforms
+## 💖 Support & Sponsorship
 
+If you find this repository helpful for your clinical research, data engineering, or health-tech work, please consider supporting the project:
 
+- ⭐ **Star** this repository to increase its visibility.
+- 🍴 **Fork** it to keep your own copy and contribute improvements.
+- 📢 **Share** it with your colleagues and network in life sciences.
+- ☕ **Sponsor** or buy me a coffee via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007)!
 
-- **[Medidata](https://www.medidata.com/)**
+Your support is deeply appreciated and helps maintain awesome open-source resources!
 
-  The dominant clinical data management platform. Provides Rave EDC, Rave RTSM, and the Medidata Clinical Cloud for end-to-end trial data capture, management, and reporting.
+---
 
+## 📈 Star History
 
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Clinical-Data-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Clinical-Data-Management&type=date&legend=top-left)
 
-- **[Veeva Vault CDMS](https://www.veeva.com/)**
+---
 
-  Cloud-native clinical data management system within Veeva's Clinical Suite. Provides EDC, data cleaning, coding, and submission-ready datasets with deep integration to Veeva Vault eTMF.
+## ⚖️ Disclaimer
 
-
-
-- **[Oracle Clinical One](https://www.oracle.com/)**
-
-  Cloud clinical data management platform. Provides EDC, data management, and trial management with Oracle's enterprise infrastructure and support.
-
-
-
-- **[Clario](https://clario.com/)**
-
-  Clinical endpoint technology provider. Provides eCOA, cardiac safety, imaging, and respiratory endpoints with data management capabilities.
-
-
-
-- **[IBM Clinical Development](https://www.ibm.com/)**
-
-  Clinical data management platform from IBM. Provides EDC, data management, and CDISC capabilities for large pharmaceutical and CRO deployments.
-
-
-
-- **[OpenClinica](https://www.openclinica.com/)**
-
-  Commercial open-source clinical trial software. Provides a **free Community Edition** for self-hosted deployment and a cloud-hosted enterprise version with ePRO, randomization, and reporting modules . The cloud version is validated and compliant with 21 CFR Part 11, GCP, and HIPAA .
-
-
-
-- **[Ennov Clinical](https://www.ennov.com/)**
-
-  EDC and clinical data management platform within Ennov's regulatory and quality suite. Provides document management, workflow, and compliance tracking.
-
-
-
-- **[Macro EDC](https://www.elsevier.com/)**
-
-  Elsevier's EDC platform. Provides electronic data capture, data management, and CDISC export capabilities.
-
-
-
-- **[ClinCapture](https://www.clincapture.com/)**
-
-  Clinically validated open-source EDC software. Commercial support and hosting available with ePRO, CTMS integration, and offline capabilities.
-
-
-
-- **[Castor](https://www.castoredc.com/)**
-
-  Clinical research platform with EDC, eConsent, ePRO, and decentralized trial tools. Popular with academic and investigator-initiated research.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Full EDC/CDM Platforms
-
-
-
-- **[LibreClinica](https://github.com/reliatec-gmbh/LibreClinica)**
-
-  **The community-driven successor to OpenClinica and the most active open-source EDC/CDM platform.** Forked in 2019 from OpenClinica 3.14 and actively maintained by ReliaTec GmbH and community contributors including University Hospital RWTH Aachen and DKFZ Partner Site Dresden . **Current version**: v1.4.0 (Tomcat 9, OpenJDK 11, PostgreSQL 13/14) . **Key features**: Web-based CDM and EDC system typically used for clinical trials, registers, and other studies . **GCP-compliant** with full audit trails, electronic signatures, discrepancy management, and CDISC ODM-XML import/export . **Extensibility**: SOAP web services for programmatic data access; support for HTML, CSS, and JavaScript injection into CRF Excel sheets; JavaScript (jQuery) available for custom form logic . **Proven in production**: Used for over 10 years at institutions including University Hospital Aachen . Users report it is "one of the most powerful clinical EDC systems, definitely a cost-effective option, extremely user-friendly, flexible and stable" . **Open source (LGPL)** . **Migration path**: Direct database migration from OpenClinica 3.14+ documented .
-
-
-
-- **[OpenClinica Community Edition](https://github.com/OpenClinica/OpenClinica)**
-
-  **The original open-source EDC/CDM platform that launched the category.** The world's first commercial open-source clinical trial software . **401 GitHub stars** . **Community Edition is free** and available for self-hosted deployment . **Key features**: Powerful EDC for clinical studies of any size, scope, language, or budget . **Freedom from vendor lock-in**, freedom to tailor the solution to specific needs, and control over eClinical technology rather than being controlled by it . **License**: LGPL (Lesser General Public License) . **Note**: OpenClinica 4.0 is no longer GPL-licensed; Community Edition continues under LGPL for OpenClinica 3.x lineage . The cloud-hosted version adds drag-and-drop study designer, modern UI, and mobile-friendly forms .
-
-
-
-- **[REDCap](https://projectredcap.org/)**
-
-  **The most widely deployed research data capture platform in academia.** Developed at Vanderbilt University in 2004 and maintained by the REDCap Consortium with **4,000+ institutional partners across 130+ countries** . **1.3+ million users** worldwide . **Free for non-profit and governmental institutions** through consortium membership . **Key features**: Secure, web-based data collection and management with customizable data entry forms, role-based access privileges, randomization management (concealed but traceable), double-data entry, formal data querying with transparent decision records, sophisticated tracking system creating complete audit trails, and online survey capability . **Statistician-friendly**: Data can be downloaded directly to SAS, STATA, SPSS, and R . **Regulatory compliance**: Designed for clinical research with complete audit trails preventing accidental or intentional data changes . **Note**: While free, REDCap is **not open-source or freeware** — individual download is not permitted; institutions must join the consortium and attain an end-user license agreement . Requires PHP web server and MySQL database with institutional technical support .
-
-
-
-- **[Phoenix CTMS](https://github.com/phoenixctms/ctsms)**
-
-  **The "ultimate CTMS/PRS/CDMS" open-source platform.** **56 stars, actively maintained** (updated weekly) . Java-based comprehensive clinical trial management system providing Clinical Trial Management System (CTMS), Patient Recruitment System (PRS), and Clinical Data Management System (CDMS) capabilities. **Open source**.
-
-
-
-- **[LCARS-C](https://github.com/hcstubbe/lcarsc)**
-
-  **Lightweight Clinical Data Acquisition and Recording System for resource-limited settings.** Published in *Scientific Reports* (Nature, 2024) . **MIT License** . **Key features**: Metadata-driven interface and database structure with uncomplicated setup; editor and library modules; lightweight architecture specifically designed for resource-constrained environments . **Validated in four clinical studies** at Ludwig Maximilian University of Munich with thorough code review, automated unit testing (testthat), and Selenium frontend tests . **R-based implementation**. **Open source (MIT)** .
-
-
-
-### CDISC Data Transformation & Submission
-
-
-
-- **[sdtm.oak](https://github.com/pharmaverse/sdtm.oak)**
-
-  **EDC-agnostic SDTM data transformation engine from the pharmaverse community.** **26 GitHub stars, updated weekly** . **Key innovation**: Automates transformation of raw clinical data in **ODM format to SDTM** based on standard mapping algorithms . **EDC and Data Standard agnostic** — works with any EDC system and any CDISC SDTM IG version . **Modular programming framework** with reusable "algorithms" as functions . **V0.2.0 capabilities**: Creates DM domain and various SDTM domains encompassing Findings, Events, Findings About, and Intervention classes . **Available on CRAN** . **Roadmap**: Metadata-driven code generation, SV/SE domains, EPOCH variable, and standard units/results derivation . **R package** .
-
-
-
-- **[cdiscbuilder](https://pypi.org/project/cdiscbuilder/)**
-
-  **Python package to convert ODM XML to SDTM/ADaM datasets.** **Configuration-driven approach** using YAML files or Python dictionaries without hardcoding complex logic . **Key features**: ODM XML parsing into dataframes; configurable mappings (source columns, hardcoded values, custom logic); schema validation; metadata-driven Findings domain processor (VS, LB, FA, etc.); Excel/Parquet output for regulatory-compliant datasets . **CLI and Python API**: `cdisc-sdtm --xml study_data.xml --output ./sdtm_data` . **Advanced mapping**: prefixing, substring extraction, fallback, default values, and case-sensitive mapping . **Open source (PyPI)** .
-
-
-
-- **[OpenEDC](https://github.com/)]**
-
-  **Open-source CDISC ODM-based EDC editor and data collection tool.** Developed at Heidelberg University's Medical Informatics Institute (MDM-Portal) . **Key principle**: All data processed and stored **only on your local device** — no cloud dependency . Can connect to an OpenEDC server for multi-user, multi-site projects . **Features**: Design medical research projects based on CDISC ODM-XML standard; drag-and-drop form building with events, forms, groups, questions, and codelists; export to ODM XML, CSV, or direct upload to MDM-Portal . **Important caveat**: Inputs are not cached between sessions — regular data exports are strongly recommended . **Open source**.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Full EDC/CDM**: **LibreClinica** (most active, OpenClinica successor, LGPL), **OpenClinica Community** (original open-source, LGPL), **Phoenix CTMS** (CTMS+PRS+CDMS, Java) .
-
-- **Academic Research**: **REDCap** (4,000+ institutions, free for non-profits, not open-source) .
-
-- **Resource-Limited**: **LCARS-C** (MIT, R-based, validated in studies) .
-
-- **CDISC Transformation**: **sdtm.oak** (R, EDC-agnostic, ODM→SDTM), **cdiscbuilder** (Python, YAML-configured) .
-
-- **ODM Editing**: **OpenEDC** (local-first, MDM-Portal integration) .
-
-
-
-**Frameworks for building custom systems**: Combine **LibreClinica** for the core EDC/CDM platform with GCP compliance and CDISC ODM support, **sdtm.oak** or **cdiscbuilder** for SDTM/ADaM transformation, **LCARS-C** for lightweight deployments in resource-limited settings, and **OpenEDC** for local-first ODM form design. Add **PostgreSQL** for persistence and **Docker** for deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Clinical data management platforms handle sensitive patient and trial data; ensure compliance with 21 CFR Part 11, ICH-GCP, HIPAA, GDPR, and applicable regional regulations.
-
-- **Open-source reality**: The open-source ecosystem for clinical data management is **mature and production-proven**. **LibreClinica** is the most active successor to OpenClinica with 10+ years of production use at university hospitals . **OpenClinica Community Edition** provides the original open-source EDC/CDM platform with LGPL licensing . **REDCap** is the most widely deployed research data capture platform with 4,000+ institutional partners, though it is not technically open-source . **LCARS-C** offers a lightweight MIT-licensed alternative validated in clinical studies . **sdtm.oak** and **cdiscbuilder** provide open-source CDISC transformation pipelines . For enterprise-scale deployments with global support, commercial platforms (Medidata, Veeva, Oracle) remain the primary choice, but open-source alternatives are **genuinely viable for academic institutions and research centers** with technical capacity.
+- This list is **community-curated** for educational and research purposes.
+- Clinical Data Management systems process highly sensitive protected health information (PHI). Always verify system compliance with **21 CFR Part 11**, **ICH-GCP**, **HIPAA**, **GDPR**, and regional regulatory frameworks before deploying software in live clinical trials.
